@@ -1,5 +1,6 @@
 import pokemonCards from '../data/pokemonCards/pokemonCards.js';
 
+
 //Array de cartas Pokémon
  const cards = pokemonCards.items; 
  //Array de cartas duplicadas
@@ -103,7 +104,7 @@ const play = () => {
   gridBoard(); 
   
   
-function flipCardBack(){
+ function flipCardBack(){
      // imageCard.setAttribute("src", cardData.image); 
      // if (cardData.matched) {
      //   return false;
@@ -116,7 +117,6 @@ function flipCardBack(){
       }, 1200);
     }
     //finalMatch (chosenClick);          
-  
 
 
     
@@ -145,12 +145,10 @@ function flipCardBack(){
    return containerPlay;
 };
 
-
 export default play;
 export {shuffle};
 export {play};
-
-
+export {finalMatch};
 
 
 

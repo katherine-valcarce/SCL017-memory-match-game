@@ -1,4 +1,4 @@
-import {shuffle, play} from './PlayGame';
+import {shuffle, play, finalMatch} from './PlayGame';
 
 
 
