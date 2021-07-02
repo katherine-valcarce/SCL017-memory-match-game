@@ -1,8 +1,5 @@
 import {shuffle, play, finalMatch} from './PlayGame';
 
-
-
-
 describe('Shuffle', () => {
     it('should shuffle the cards', () => {
         let cards = [1, 2, 3, 4, 5, 6, 7, 8, 9];
@@ -15,7 +12,10 @@ describe('Play', () => {
       const content = play();
       expect(content instanceof HTMLElement).toBe(true);
     });
-  });
+    it('should be a function', () => {
+      expect(typeof play).toBe('function');
+    });
+});
 
 
 
