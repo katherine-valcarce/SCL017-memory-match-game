@@ -103,52 +103,11 @@ const play = () => {
   gridBoard(); 
   
   
-<<<<<<< HEAD
- function flipCardBack(){
-     // imageCard.setAttribute("src", cardData.image); 
-     // if (cardData.matched) {
-     //   return false;
-     // } 
-      
-     //chosenClick.push(cardData);
-
-      setTimeout(function() {
-        finalMatch (chosenClick);
-      }, 1200);
-    }
-    //finalMatch (chosenClick);          
-
-
-    
- function finalMatch (arrayOfChosenClick) {
-
-      if (arrayOfChosenClick.length == 2) {
-          if(arrayOfChosenClick[0].id == arrayOfChosenClick[1].id) {
-            arrayOfChosenClick [0].matched = true;
-            arrayOfChosenClick [1].matched = true;
-            matchQuantity++;
-              if (matchQuantity === 9){
-                containerGrid.style.display = "none";
-                finalGame.style.display = "block";
-                for (let i = 0; i < 17; i++){
-                 cardsPair[i].matched = false;
-                }
-                 shuffle(cardsPair);
-                 matchQuantity = 0;
-                 
-              }
-          
-          } else (gridBoard())
-            arrayOfChosenClick.length =0;                       
-      }
-    }      
-   return containerPlay;
-=======
-  function flipCardBack(){
+  function flipCardBack() {
     setTimeout(function() {
       finalMatch (chosenClick);
     }, 1200);
-  }          
+  }
 
   function finalMatch (arrayOfChosenClick) {
     if (arrayOfChosenClick.length == 2) {
@@ -170,18 +129,8 @@ const play = () => {
     }
   }      
     return containerPlay;
->>>>>>> c1fd0b6a61d2664cfc6c006ead9bb81fe3a09393
 };
 
 export default play;
 export {shuffle};
-<<<<<<< HEAD
 export {play};
-export {finalMatch};
-
-
-
-
-=======
-export {play};
->>>>>>> c1fd0b6a61d2664cfc6c006ead9bb81fe3a09393
